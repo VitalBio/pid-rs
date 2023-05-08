@@ -101,6 +101,10 @@ where
         self.kff = kff;
     }
 
+    pub fn get_setpoint(&mut self) -> T {
+        self.setpoint
+    }
+
     pub fn update_setpoint(&mut self, setpoint: T) {
         self.setpoint = setpoint;
     }
